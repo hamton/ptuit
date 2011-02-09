@@ -33,12 +33,12 @@
 				</tr>
 				<tr>
 					<td class="label">Contraseña:</td>
-					<td class="campo"><input class="inputNormal" type="text" id="inputPass"></td>
+					<td class="campo"><input class="inputNormal" type="password" id="inputPass"></td>
 					<td class="ayuda"><img src="imagen/ayuda.gif" alt="Ayuda" onmouseover="muestraAyuda(event, 'Contraseña')"></td>
 				</tr>
 				<tr>
 					<td class="label">Repetir contraseña:</td>
-					<td class="campo"><input class="inputNormal" type="text" id="inputRpass"></td>
+					<td class="campo"><input class="inputNormal" type="password" id="inputRpass"></td>
 					<td class="ayuda"><img src="imagen/ayuda.gif" alt="Ayuda" onmouseover="muestraAyuda(event, 'Repetir Contraseña')"></td>
 				</tr>
 			</tbody>
