@@ -10,8 +10,8 @@
 
     <div id="header">
       <img src="./image/logo.jpg" alt="Logo" />
-      <a href="http://localhost/registro.php">Registrarse</a> 
-      <a href="http://localhost/login.php">Login</a> 
+      <a href="registro.php">Registrarse</a> 
+      <a href="login.php">Login</a> 
     </div>
 
     <div id="content">
