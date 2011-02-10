@@ -30,12 +30,12 @@
     /** @param $password que recoge el password*/
     
     public $error=false;
-  
-  
+ 
 
    /** @fn ( validarLogin que busca en la base de datos por el nick del usuario y devuelve el id del mismo si todo a ido bien o la varia error=false)*/
     public function validarLogin()
     {
+
      $username = $_POST['nick']; 
      $password = $_POST['pass']; 
 	
@@ -44,16 +44,15 @@
 	$db = new bd;
         $db->conexionBd();//Nos conectamos
 
-$arraySelect[0] = 'id';
-$arraySelect[1] = 'nombre';
-$arraySelect[2] = 'password';
+	$arraySelect[0] = 'id';
+	$arraySelect[1] = 'nombre';
+	$arraySelect[2] = 'password';
 
-$arrayWhere = 'nombre = ' . $username;
+	$arrayWhere[0] = 'nombre = ' . $username;
 
 	$result = $db->select('usuarios',$arraySelect,$arrayWhere);
 
-	
-    
+	    
 	if (!empty($result))// si la consulta devuelve datos
 	{
 	  $row = $result->fetch();  //Meto el resultado en un array 
