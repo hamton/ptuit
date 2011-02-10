@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Formulario de contacto en AJAX</title>
     <link rel="stylesheet" type="text/css" href="css/registro.css" />
-    <script type="text/javascript" src="js/validaciones.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/pruebas.js"></script>
+
   </head>
   <body>
     <div id="formContenedor">
