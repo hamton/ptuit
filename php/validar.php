@@ -17,8 +17,6 @@ function validar_email($email) {
 	}
 
 
-
-
 function validar_clave($clave,&$error_clave){
    if(strlen($clave) < 8){
       $error_clave = "La clave debe tener al menos 8 caracteres";
