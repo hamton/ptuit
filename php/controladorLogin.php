@@ -29,7 +29,7 @@
     /** @param $username que recoge el nick*/
     /** @param $password que recoge el password*/
     
-    public $error=false;
+    public  $error= false;
  
 
    /** @fn ( validarLogin que busca en la base de datos por el nick del usuario y devuelve el id del mismo si todo a ido bien o la varia error=false)*/
@@ -52,25 +52,26 @@
 
 	$result = $db->select('usuarios',$arraySelect,$arrayWhere);
 
-	    
+
 	if (!empty($result))// si la consulta devuelve datos
 	{
 	  $row = $result->fetch();  //Meto el resultado en un array 
+	  print ($row['id']);  
 	  if ( $row['password'] == $password )//Valido password
 	    { 
 		Sesiones.crearSesion($row['id'])  ; 
 	    } 
 	    else
 	     {
-		this.$error = true; 
+		return true;
 	     } 
 	}
 	else //si el nombre no se encuentra en BBDD
 	{	    
-	      this.$error=true;  
+	     return true; 
 	}
       
-      return this.$error; 
+      return false;
     }
 }
 ?>
