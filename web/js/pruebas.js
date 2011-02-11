@@ -1,16 +1,11 @@
-  $(document).ready(function() {
-        alert("okk");
-        $("#inputUser").blur(function(){
-        $.ajax({
-          type: "POST",
-          async: "true",
-          dataType: "json",
-          data: {"inputUser":$("#inputUser").value},
-          url: "probandoAjax.php",
-          success: function(){
-            alert("ok");
-          }
-        });
+$(document).ready(function(){
+  
+      $("#inputUser").blur(function(){
+      $("#ajax").load("probandoAjax.php", {nombre: "Pepe", edad: 45}, function(){
+					
+         alert("recibidos los datos por ajax");
+      });
   });
-
 });
+
+

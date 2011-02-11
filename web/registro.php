@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="formContenedor">
-	    <form id="formulario" method="post" action="">
+	    <form id="formulario" method="POST" action="">
 		    <div id="transparencia">
 		  	  <div id="transparenciaMensaje">Caja transparente</div>
 	    	</div>
