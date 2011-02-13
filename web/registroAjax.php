@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/registro.css" />
   
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/pruebas.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
   </head>
   <body>
     <div id="formContenedor">
