@@ -49,7 +49,6 @@ $(document).ready(function(){
 				{//user name is not allowed
 				}
         //else //user name is allowed		
-		
 	});
 
 });
