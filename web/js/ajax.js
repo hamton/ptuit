@@ -36,20 +36,23 @@ $(document).ready(function(){
 
 */
 
+
 $(document).ready(function(){
 	$("#inputUser").blur(function(){
 	var inputUser=$("#inputUser").val();
 	$.post(
 		"validateUser.php",
 		{user:inputUser},
-		function respuesta(data){
-			var resultado=jQuery.parseJSON(data);
-			alert(resultado.respuesta);
-
-		}
-	);
-
+		function reply(data){
+			var reply=jQuery.parseJSON(data);
+      	if(reply.user!="OK")
+				{//user name is not allowed
+				}
+        //else //user name is allowed		
+		
+	});
 
 });
 });
+
 

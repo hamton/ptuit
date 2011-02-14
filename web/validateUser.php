@@ -1,14 +1,13 @@
 
 <?php 
 
-if ($_POST['user']=='admin'){
-	$jsondata['respuesta']=OK;
+if ($_POST['user']=='admin'){ //query to the database if user exists.
+	$jsondata['user']='NOK';
 	echo json_encode($jsondata);
-	
 }
-else echo "no existe";
-
-
-
+else{
+  $jsondata['user']='OK';
+	echo json_encode($jsondata);
+}
 ?>
 
