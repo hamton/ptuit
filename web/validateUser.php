@@ -1,8 +1,5 @@
 
 <?php 
-include("../php/bbdd/bd.php");
-
-
 class validateUser{
   public function userExist(){
     if ($_POST['user']=='admin'){ //query to the database if user exists.
