@@ -1,19 +1,8 @@
 
-<?php 
-class validateUser{
-  public function userExist(){
-    if ($_POST['user']=='admin'){ //query to the database if user exists.
-	   $jsondata['user']='NOK';
-	   echo json_encode($jsondata);
-      }
-    else{
-    $jsondata['user']='OK';
-	    echo json_encode($jsondata);
-    }
-  }
-}
+<?php
 
-$usuario=new validateUser();
+include("../php/validar.php"); 
+$usuario=new validate();
 $usuario->userExist();
 ?>
 
