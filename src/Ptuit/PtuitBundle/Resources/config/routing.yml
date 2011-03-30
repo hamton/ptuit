@@ -1,0 +1,5 @@
+homepage:
+    pattern:  /{lenguage}
+    defaults: { _controller: Ptuit:Main:index, culture: es }
+    requirements:
+        culture: es | en

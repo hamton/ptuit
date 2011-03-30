@@ -1,0 +1,36 @@
+{% extends 'Ptuit::layout.html.twig' %}
+{% block content %}
+<script type="text/javascript" src="{{ asset('bundles/ptuit/js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/ptuit/js/contadorTexto.js') }}"></script>
+ <div id="header">
+            <img src="{{ asset('bundles/ptuit/images/logo.png') }}" alt="ptuit"/>
+            <a id="registro" href="#">Registrarse</a>
+            <a id="login" href="#">Login</a>
+            <div id="logExito"></div>
+            <div id="panel">
+                <form action="#" method="post" >                    
+                    <p><em>Escribe tu nick y password</em></p>
+                    <label class="label" for="nick">Nombre/Nick:</label><input id="nick" class="campo" type="text"/>               
+                    <label class="label" for="pass">Password:</label> <input id="pass" class="campo" title="pass" type="password"/>
+                    <label class="label" for="cat">Catcha:</label><input id="cat" class="campo" title="cat" type="text"/>
+                    <p><input id="btnLogin" title="btnlogin" name="login" value="login" type="button"/></p>
+                    <div class="error" id="errorFormLogin"></div>
+                </form>
+            </div>
+            <div id="panel2">
+                <form action="#" method="post">                    
+                    <p><em>Entra tus datos para registrarte</em></p>
+                    <label class="label" for="nickR">Nombre/Nick:</label><input id="nickR" class="campo" title="nick" type="text"/>
+                    <label class="label" for="passR">Password:</label><input id="passR" class="campo" title="pass" type="password"/>
+                    <label class="label" for="passR2">Repite Password:</label><input id="passR2" class="campo" title="pass2" type="password"/>
+                    <label class="label" for="correo">Email:</label><input id="correo" class="campo" title="correo" type="text"/>
+                    <p><input id="btnRegistrar" title="registrar" name="registrar" value="registrar" type="button"/></p>
+                    <div class="error" id="errorFormRegistro"></div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div id="footer">
+            <div id="cc">Ptuit 2011 </div>
+        </div>
+{% endblock %}
